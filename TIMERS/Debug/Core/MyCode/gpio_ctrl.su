@@ -1,0 +1,5 @@
+gpio_ctrl.c:4:6:gpio_init	16	static
+gpio_ctrl.c:12:6:gpio_set	32	static
+gpio_ctrl.c:20:9:gpio_get	24	static
+gpio_ctrl.c:27:6:gpio_toggle	24	static
+gpio_ctrl.c:33:6:delay	24	static

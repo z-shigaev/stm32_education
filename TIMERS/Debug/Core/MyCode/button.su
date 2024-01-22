@@ -1,0 +1,4 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+button.c:8:9:button_read	16	static
+button.c:15:6:button_init	8	static
+button.c:30:6:EXTI0_IRQHandler	8	static

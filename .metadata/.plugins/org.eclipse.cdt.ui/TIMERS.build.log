@@ -1,0 +1,20 @@
+15:54:05 **** Incremental Build of configuration Debug for project TIMERS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/MyCode/button.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I"D:/YandexDisk/Education/Microcontrollers/STM32Cube/TIMERS/Core/MyCode" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/MyCode/button.d" -MT"Core/MyCode/button.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/MyCode/button.o"
+arm-none-eabi-gcc -o "TIMERS.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\YandexDisk\Education\Microcontrollers\STM32Cube\TIMERS\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMERS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMERS.elf
+ 
+arm-none-eabi-objdump -h -S  TIMERS.elf  > "TIMERS.list"
+arm-none-eabi-objcopy  -O binary  TIMERS.elf  "TIMERS.bin"
+arm-none-eabi-size   TIMERS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7448	     20	   1572	   9040	   2350	TIMERS.elf
+Finished building: default.size.stdout
+Finished building: TIMERS.bin
+ 
+Finished building: TIMERS.list
+ 
+ 
+
+15:54:06 Build Finished. 0 errors, 0 warnings. (took 693ms)
+
